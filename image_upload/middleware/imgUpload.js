@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 });
 
 // creating multer middleware for file upload
-const upload = multer({
+const uploadMiddleware = multer({
     // determines how files should be stored on the disk
     storage: storage,
     // specifies a file size limit of 5 MB
@@ -30,7 +30,7 @@ const upload = multer({
 });
 
 module.exports = {
-    upload,
+    uploadMiddleware,
 }
 
 /*

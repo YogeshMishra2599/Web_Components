@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const pool = require('./db/pg_config');
-const apiRoutes = require('./routes/img_upload_api');
+const apiRoutes = require('./routes/api_routes');
 const ssrRoutes = require('./routes/ssr_routes');
 
 app.set('view engine', 'ejs');
